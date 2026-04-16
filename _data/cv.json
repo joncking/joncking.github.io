@@ -1,152 +1,200 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Jonathan King",
+    "label": "Lead AI/ML Engineer | DevOps/SRE | MLOps",
+    "email": "jonking9977@gmail.com",
+    "website": "https://joncking.github.io",
+    "summary": "Engineering leader spanning AI/ML systems, MLOps, and cloud infrastructure. Experience includes building production ML services, compliant platforms, and multi-tenant AWS/GCP environments across SaaS, healthcare, retail, hospitality, and enterprise workloads.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
+      "city": "",
+      "countryCode": "",
       "region": ""
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
-      },
-      {
-        "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "network": "LinkedIn",
+        "username": "jon-king-devops",
+        "url": "https://www.linkedin.com/in/jon-king-devops"
       }
     ]
   },
-  "work": [],
-  "education": [
+  "work": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "company": "Fullsteam",
+      "position": "Lead AI/ML Engineer (Manager)",
+      "startDate": "May 2025",
+      "endDate": "Present",
+      "summary": "Led AI/ML engineering for central AI/ML engineering excellence team across 92 portfolio companies.",
+      "highlights": [
+        "Led 6 engineers while owning modeling, architecture, and quality decisions across hospitality, retail, healthcare, and automotive workloads.",
+        "Shipped 6 production AI/ML systems in 6 months, including churn prediction via survival analysis serving millions of customers and a recommendation system using hybrid embedding retrieval with a custom reranker.",
+        "Designed and prototyped agentic generation of knowledge graphs with embedded node semantics, enabling natural-language queries across several databases without a unified schema.",
+        "Architected the ecommerce business unit's EKS platform with ephemeral per-PR environments in GitHub Actions, cutting PR merge time from days to hours.",
+        "Built an MLOps stack on SageMaker, MLflow, and Prometheus, reducing the full train-to-serve pipeline from days to hours."
+      ]
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
+      "company": "AnswerRocket",
+      "position": "Lead DevOps/SRE (Manager)",
+      "startDate": "Sep 2024",
+      "endDate": "May 2025",
+      "summary": "Owned infrastructure during the company's transition from NLP analytics to LLM-based workloads.",
+      "highlights": [
+        "Implemented per-environment AWS account isolation, network redundancy, and full infrastructure-as-code coverage, cutting provisioning from days to minutes.",
+        "Architected infrastructure with Terraform and Terragrunt across dozens of tenant-specific environments, spanning AWS-native deployments and hybrid enterprise customer environments.",
+        "Owned the SOC 2 Type II program end to end, including identity, infrastructure controls, patching, and audit preparation as the sole internal security function."
+      ]
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "company": "Mednition (KATE AI)",
+      "position": "Site Reliability Engineer",
+      "startDate": "Sep 2023",
+      "endDate": "Sep 2024",
+      "summary": "Managed GCP infrastructure for a real-time clinical decision support platform and clinical analysis.",
+      "highlights": [
+        "Supported KATE, an FDA Breakthrough Device-designated AI platform processing 10B+ data points across 4M+ emergency department patient encounters.",
+        "Owned infrastructure for the Clinical Data Engine, enabling research-grade retrospective analysis and real-time clinical NLP across millions of EHR records.",
+        "Improved analytics application response times from 2 minutes to under 10 seconds through BigQuery view optimization."
+      ]
+    },
+    {
+      "company": "LifeBell AI",
+      "position": "Senior DevOps Engineer",
+      "startDate": "Mar 2022",
+      "endDate": "Sep 2023",
+      "summary": "First full infrastructure hire for a real-time patient monitoring platform.",
+      "highlights": [
+        "Architected the AWS cloud platform with SOC 2 and HIPAA compliance for real-time patient monitoring.",
+        "Built the end-to-end IoT-to-cloud ML inference pipeline from Bluetooth patient devices through edge gateways and custom DNS routing into a centralized Kubernetes cluster.",
+        "Supported ML-serving workloads including posture recognition, tachycardia prediction, and sepsis detection.",
+        "Developed and maintained GitHub Actions CI/CD pipelines for major services to production, pairing with lead developers on releases."
+      ]
+    },
+    {
+      "company": "NCR Corporation",
+      "position": "Site Reliability Engineer",
+      "startDate": "Oct 2020",
+      "endDate": "Mar 2022",
+      "summary": "Kubernetes SME for a large-scale migration from legacy VM environments to AKS.",
+      "highlights": [
+        "Led containerization guidance for workloads serving billions in transaction volume during the migration from VMs and Rackspace to AKS.",
+        "Designed and delivered Kubernetes training for 25+ engineers across US and offshore teams.",
+        "Built the Prometheus/Grafana observability stack for Kubernetes environments, including dashboards, alerting rules, and runbooks."
+      ]
     }
   ],
-  "skills": [],
+  "education": [
+    {
+      "institution": "Emory University",
+      "area": "B.Sc. Mathematics",
+      "endDate": "2020",
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certified Kubernetes Administrator (CKA)",
+    }
+  ],
+  "skills": [
+    {
+      "name": "Cloud & Compute",
+      "level": "",
+      "keywords": [
+        "AWS (EKS, EC2, SageMaker, ALB, ACM)",
+        "GCP (Cloud Run, BigQuery)",
+        "Azure (AKS)"
+      ]
+    },
+    {
+      "name": "Infrastructure",
+      "level": "",
+      "keywords": [
+        "Kubernetes (CKA)",
+        "Docker",
+        "Terraform",
+        "Terragrunt",
+        "Helm",
+        "GitHub Actions",
+        "ArgoCD",
+        "Modal AI"
+      ]
+    },
+    {
+      "name": "ML/AI Systems",
+      "level": "",
+      "keywords": [
+        "SageMaker",
+        "MLflow",
+        "Agent frameworks",
+        "Knowledge graphs",
+        "ML model serving",
+        "Ontology modeling"
+      ]
+    },
+    {
+      "name": "Observability",
+      "level": "",
+      "keywords": [
+        "Prometheus",
+        "Grafana",
+        "CloudWatch",
+        "Custom metrics pipelines"
+      ]
+    },
+    {
+      "name": "Security",
+      "level": "",
+      "keywords": [
+        "HashiCorp Vault",
+        "External Secrets",
+        "SOC 2 Type II",
+        "HIPAA"
+      ]
+    },
+    {
+      "name": "Languages",
+      "level": "",
+      "keywords": [
+        "Python",
+        "Bash",
+        "Go",
+        "Java"
+      ]
+    },
+    {
+      "name": "Data",
+      "level": "",
+      "keywords": [
+        "Snowflake",
+        "BigQuery",
+        "Redshift",
+        "MongoDB",
+        "Postgres"
+      ]
+    }
+  ],
   "languages": [],
   "interests": [],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Decoding Odor Mixtures in the Dog Brain: An Awake fMRI Study",
+      "publisher": "Chemical Senses (Oxford University Press)",
+      "releaseDate": "2020-10-14",
+      "website": "https://doi.org/10.1093/chemse/bjaa068",
+      "summary": ""
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Through a Dog's Eyes: fMRI Decoding of Naturalistic Videos from the Dog Cortex",
+      "publisher": "JoVE",
+      "releaseDate": "2022-09-13",
+      "website": "https://doi.org/10.3791/64442",
+      "summary": "Acknowledged contributor."
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "presentations": [],
+  "teaching": [],
+  "portfolio": []
 }
