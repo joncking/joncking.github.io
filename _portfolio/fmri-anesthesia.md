@@ -6,8 +6,8 @@ excerpt: "Research pipeline for decoding mental-imagery and consciousness-relate
 date: 2026-05-11
 ---
 
-fMRI Anesthesia is a research pipeline for studying covert-consciousness signals
-in the Michigan human anesthesia fMRI dataset. The project analyzes mental
+This project is a research pipeline for studying covert-consciousness signals
+in the Michigan human anesthesia fMRI dataset (doi:10.18112/openneuro.ds006623.v1.0.0). The project analyzes mental
 imagery tasks performed under graded propofol sedation, with a focus on whether
 machine-learning models can recover task-discriminative neural structure during
 loss of responsiveness.
@@ -20,7 +20,7 @@ interpretability.
 ## Result
 
 The main result is a graded loss and partial recovery of task decoding as
-propofol concentration changes. In the publication-style analysis, whole-brain
+propofol concentration changes. In the analysis, whole-brain
 task decoding reached 79.3% balanced accuracy while awake, 64.6% before loss of
 responsiveness, 36.1% during loss of responsiveness, and 58.6% after return of
 responsiveness. Chance for the three-class task problem is 33.3%; the LOR group
