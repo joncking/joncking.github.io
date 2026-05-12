@@ -13,7 +13,8 @@ question is whether task-decodable neural content tracks clinical loss of
 consciousness, or whether cognitive content degrades earlier than the
 neural-dynamics markers often used as proxies for consciousness level.
 
-The analysis stack includes strict LOR/ROR labeling, block and LSS feature
+The analysis stack includes strict LOR/ROR (Loss/Recovery of Responsiveness) 
+labeling, block and LSS (Least Squares Separate) feature
 generation, run-level functional-connectivity features, leave-one-subject-out
 cross-validation, permutation testing, dose-response modeling, and SHAP-based
 interpretability.
@@ -31,7 +32,7 @@ responding.
 A dose-response model estimated the half-maximal collapse of task decoding at
 about 1.27 ug/mL propofol effect-site concentration, below typical clinical
 maintenance concentrations. In other words, the task-specific content signal
-appears to fade earlier than the clinical state itself. Individual EC50
+appears to fade earlier than the clinical state itself. Individual EC50 (Effective Concentration 50)
 estimates correlated with the clinically observed LOR concentration, suggesting
 meaningful subject-level variation in propofol sensitivity.
 
@@ -57,7 +58,8 @@ I also tested whether the conclusion was an artifact of asking the harder
 three-class question, "which imagery task is this?" rather than the simpler
 binary question, "is the subject doing imagery at all?" Whole-brain
 imagery-vs-rest decoding at LOR remained essentially at chance, and proxy ROI
-analyses modeled on the original SMA and medial-temporal targets did not reveal
+analyses modeled on the original SMA (Supplementary Motor Area) 
+and medial-temporal targets did not reveal
 a stronger group-level covert-consciousness signal.
 
 The follow-up does not claim that all residual processing is absent. Instead,
@@ -69,7 +71,8 @@ preserved task identity or binary task-presence decoding.
 ## Selected References
 
 The neural-dynamics feature set follows prior fMRI consciousness work on
-propofol-related slowing of neural timescales, dynamic DMN/DAN switching,
+propofol-related slowing of neural timescales, dynamic DMN/DAN 
+(Default Mode/Dorsal Attention Networks) switching,
 cortical functional gradients, and integration-segregation balance.
 
 - Huang, Z., et al. (2021). Anterior insula regulates brain network transitions that gate conscious access. *Cell Reports*, 35(5), 109081.
