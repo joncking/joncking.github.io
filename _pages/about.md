@@ -7,16 +7,16 @@ redirect_from:
   - /about.html
 ---
 
-I'm Jonathan King, an AI/ML researcher based in Raleigh, NC. My research interests span LLM alignment, Neural Cellular Automata, and neuroscience -- particularly machine learning methods for multi-voxel pattern analysis (MVPA).
+I'm Jonathan King, an AI/ML researcher based in Raleigh, NC. My areas of interest span alignment and mechanistic interpretability, automation for ML and agentic systems, and utilizing AI/ML for clinical neuroscience.
 
 I previously worked on canine neuroimaging research using awake fMRI, contributing to studies on odor decoding and visual processing in dog brains. I'm currently an independent researcher exploring the intersection of artificial and biological intelligence.
 
-## Research Interests
+## Areas of Interest
 
-- **LLM Alignment** -- Understanding and improving how large language models align with human values and intentions
-- **Neural Cellular Automata** -- Exploring emergent computation and self-organization in neural systems
-- **Neuroscience & ML** -- Applying machine learning methods to neuroimaging data, particularly MVPA techniques
+- **Alignment & Mechanistic Interpretability** -- Understanding and improving how AI systems behave, represent information, and align with human intentions
+- **Automation for ML & Agentic Systems** -- Building tools and workflows that make building, evaluating, and utilizing models and agents easier and more effective
+- **Clinical Neuroscience & AI/ML** -- Utilizing AI/ML methods for clinical neuroscience and neuroimaging analysis
 
-## Publications
+## Projects and Papers
 
-See my [publications page](/publications/) for a full list of my academic work.
+See my [papers](/publications/) and [portfolio](/portfolio/) for selected academic work, projects, and applied research.

@@ -2,15 +2,16 @@
 title: "Decoding Consciousness Under Anesthesia"
 collection: portfolio
 permalink: /portfolio/fmri-anesthesia/
-excerpt: "Research pipeline for decoding mental-imagery and consciousness-related neural signals in propofol anesthesia fMRI. The headline result is a graded decoding curve: task identity is robust while awake, degrades with increasing sedation, remains weakly above chance during loss of responsiveness, and partially recovers after return of responsiveness."
+excerpt: "Preprint-stage fMRI analysis of mental-imagery decoding under propofol anesthesia. Task identity decoding starts to collapse before clinical loss of responsiveness, and subjects with awake-like neural dynamics do not show preserved decodable task content."
 date: 2026-05-11
 ---
 
-This project is a research pipeline for studying covert-consciousness signals
-in the Michigan human anesthesia fMRI dataset (doi:10.18112/openneuro.ds006623.v1.0.0). The project analyzes mental
-imagery tasks performed under graded propofol sedation, with a focus on whether
-machine-learning models can recover task-discriminative neural structure during
-loss of responsiveness.
+This project re-analyzes the Michigan human anesthesia fMRI dataset
+(doi:10.18112/openneuro.ds006623.v1.0.0), in which healthy adults performed
+motor-imagery tasks during target-controlled propofol infusion. The central
+question is whether task-decodable neural content tracks clinical loss of
+consciousness, or whether cognitive content degrades earlier than the
+neural-dynamics markers often used as proxies for consciousness level.
 
 The analysis stack includes strict LOR/ROR labeling, block and LSS feature
 generation, run-level functional-connectivity features, leave-one-subject-out
@@ -19,19 +20,59 @@ interpretability.
 
 ## Result
 
-The main result is a graded loss and partial recovery of task decoding as
-propofol concentration changes. In the analysis, whole-brain
-task decoding reached 79.3% balanced accuracy while awake, 64.6% before loss of
-responsiveness, 36.1% during loss of responsiveness, and 58.6% after return of
-responsiveness. Chance for the three-class task problem is 33.3%; the LOR group
-result is weak but above chance by permutation testing.
+The first result is that task-identity information starts to disappear before
+the clinical endpoint is reached. In the later within-subject analysis, a
+three-class decoder trained on each subject's awake imagery blocks decoded task
+identity at 76.4% balanced accuracy while awake, but only 36.9% at loss of
+responsiveness. Chance is 33.3%, so the LOR signal is, at most, marginal: most
+of the awake task-discriminative signal is gone by the time subjects stop
+responding.
 
-A dose-response model estimated a group EC50 of about 1.27 ug/ml for loss of
-task-discriminative signal. Individual EC50 estimates correlated with LOR
-decoding performance, and recovery differed from induction, consistent with a
-neural-inertia interpretation.
+A dose-response model estimated the half-maximal collapse of task decoding at
+about 1.27 ug/mL propofol effect-site concentration, below typical clinical
+maintenance concentrations. In other words, the task-specific content signal
+appears to fade earlier than the clinical state itself. Individual EC50
+estimates correlated with the clinically observed LOR concentration, suggesting
+meaningful subject-level variation in propofol sensitivity.
 
-The interpretability analyses separate complementary signals: cortical task
-representations degrade strongly at LOR, thalamic parcels retain some
-task-specific signal, and run-level connectivity features highlight subcortical
-circuits linked to propofol's pharmacology.
+The second result is that this early content collapse dissociates from
+consciousness-level dynamics. The dynamics model was a separate run-level
+logistic decoder trained to distinguish awake from sedated runs using 49
+non-task features: temporal autocorrelation by network, DMN/DAN switching
+metrics, cortical-gradient geometry, and integration-segregation balance,
+following prior fMRI consciousness work on propofol anesthesia. In
+leave-one-subject-out testing, it produced each held-out subject's continuous
+probability of being in an awake-like state at LOR. That dynamics score did not
+predict preserved task decoding: subjects with the most awake-looking dynamics
+spanned nearly the full range of LOR task accuracy, and the highest-scoring
+subject sat near the bottom of the decoding distribution.
+This supports the narrower claim that preserved neural dynamics should not be
+treated as evidence of preserved decodable task content.
+
+![Two-panel summary of propofol fMRI decoding results: task identity decoding drops from awake to LOR, while dynamics-based P(conscious) at LOR does not predict preserved task-identity accuracy.](/images/portfolio/fmri-anesthesia-summary.png)
+
+## Follow-Up Checks
+
+I also tested whether the conclusion was an artifact of asking the harder
+three-class question, "which imagery task is this?" rather than the simpler
+binary question, "is the subject doing imagery at all?" Whole-brain
+imagery-vs-rest decoding at LOR remained essentially at chance, and proxy ROI
+analyses modeled on the original SMA and medial-temporal targets did not reveal
+a stronger group-level covert-consciousness signal.
+
+The follow-up does not claim that all residual processing is absent. Instead,
+it sharpens the interpretation: propofol appears to leave a small, diffuse
+population-level residual while degrading the task-specific structure needed to
+decode cognitive content. Awake-like dynamics did not identify subjects with
+preserved task identity or binary task-presence decoding.
+
+## Selected References
+
+The neural-dynamics feature set follows prior fMRI consciousness work on
+propofol-related slowing of neural timescales, dynamic DMN/DAN switching,
+cortical functional gradients, and integration-segregation balance.
+
+- Huang, Z., et al. (2021). Anterior insula regulates brain network transitions that gate conscious access. *Cell Reports*, 35(5), 109081.
+- Huang, Z., et al. (2021). Asymmetric neural dynamics characterize loss and recovery of consciousness. *NeuroImage*, 236, 118042.
+- Huang, Z., et al. (2023). Functional geometry of the cortex encodes dimensions of consciousness. *Nature Communications*, 14, 72.
+- Jang, H., Mashour, G. A., Hudetz, A. G., & Huang, Z. (2024). Measuring the dynamic balance of integration and segregation underlying consciousness. *Nature Communications*, 15, 8843.

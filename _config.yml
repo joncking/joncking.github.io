@@ -12,7 +12,7 @@ site_theme               : "mint" # The available themes options are "default", 
 title                    : "Jonathan King"
 title_separator          : "-"
 name                     : &name "Jonathan King"
-description              : &description "AI/ML researcher exploring LLM alignment, Neural Cellular Automata, and Neuroscience"
+description              : &description "AI/ML researcher exploring alignment and mechanistic interpretability, automation for ML and agentic systems, and AI/ML for clinical neuroscience"
 url                      : https://joncking.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "joncking/joncking.github.io"
@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Jonathan King"
   pronouns         : # example: "she/her"
-  bio              : "AI/ML leader independently researching LLM alignment, Neural Cellular Automata, and Neuroscience (ML methods for MVPA)."
+  bio              : "AI/ML researcher focused on alignment and mechanistic interpretability, automation for ML and agentic systems, and AI/ML for clinical neuroscience."
   location         : "Raleigh, NC"
   employer         : "Independent Researcher"
   uri              : # URL
