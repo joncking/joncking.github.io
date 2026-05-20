@@ -4,7 +4,6 @@ collection: portfolio
 permalink: /portfolio/agentspace/
 excerpt: "Kubernetes-native platform for vending reusable AI agent specialists into private, namespace-isolated workspaces with generated orchestrators, artifact storage, tracing, and a small CLI. [GitHub repository](https://github.com/joncking/agentspace-public)."
 date: 2026-05-11
-link: https://github.com/joncking/agentspace-public
 ---
 
 [View the public repository](https://github.com/joncking/agentspace-public)
