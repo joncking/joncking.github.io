@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-I'm Jonathan King, an AI/ML researcher based in Raleigh, NC. My areas of interest span alignment and mechanistic interpretability, automation for ML and agentic systems, and utilizing AI/ML for clinical neuroscience.
+I'm Jonathan King, an AI/ML engineer based in Raleigh, NC. I build agentic and ML systems to solve business problems. On the side, I enjoy working on problems related to neuroscience, mechanistic interpretability, and whatever interesting paper I've read most recently
 
-I previously worked on canine neuroimaging research using awake fMRI, contributing to studies on odor decoding and visual processing in dog brains. I'm currently an independent researcher exploring the intersection of artificial and biological intelligence.
+I previously worked on canine neuroimaging research using awake fMRI, contributing to studies on odor decoding and visual processing in dog brains. 
 
 ## Areas of Interest
 
